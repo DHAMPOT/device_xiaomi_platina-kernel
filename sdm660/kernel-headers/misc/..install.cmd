@@ -1,0 +1,1 @@
+cmd_kuntul/include/misc/.install := /bin/bash ../scripts/headers_install.sh kuntul/include/misc ../include/uapi/misc cxl.h; /bin/bash ../scripts/headers_install.sh kuntul/include/misc ./include/generated/uapi/misc ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > kuntul/include/misc/$$F; done; touch kuntul/include/misc/.install

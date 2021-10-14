@@ -1,0 +1,1 @@
+cmd_kuntul/include/linux/hdlc/.install := /bin/bash ../scripts/headers_install.sh kuntul/include/linux/hdlc ../include/uapi/linux/hdlc ioctl.h; /bin/bash ../scripts/headers_install.sh kuntul/include/linux/hdlc ./include/generated/uapi/linux/hdlc ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > kuntul/include/linux/hdlc/$$F; done; touch kuntul/include/linux/hdlc/.install

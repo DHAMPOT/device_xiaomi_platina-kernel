@@ -1,0 +1,1 @@
+cmd_kuntul/include/rdma/hfi/.install := /bin/bash ../scripts/headers_install.sh kuntul/include/rdma/hfi ../include/uapi/rdma/hfi hfi1_user.h; /bin/bash ../scripts/headers_install.sh kuntul/include/rdma/hfi ./include/generated/uapi/rdma/hfi ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > kuntul/include/rdma/hfi/$$F; done; touch kuntul/include/rdma/hfi/.install

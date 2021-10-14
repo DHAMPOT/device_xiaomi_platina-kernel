@@ -1,0 +1,1 @@
+cmd_kuntul/include/linux/cifs/.install := /bin/bash ../scripts/headers_install.sh kuntul/include/linux/cifs ../include/uapi/linux/cifs ; /bin/bash ../scripts/headers_install.sh kuntul/include/linux/cifs ./include/generated/uapi/linux/cifs ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > kuntul/include/linux/cifs/$$F; done; touch kuntul/include/linux/cifs/.install

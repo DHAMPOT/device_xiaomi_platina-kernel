@@ -1,0 +1,1 @@
+cmd_kuntul/include/mtd/.install := /bin/bash ../scripts/headers_install.sh kuntul/include/mtd ../include/uapi/mtd inftl-user.h mtd-abi.h mtd-user.h nftl-user.h ubi-user.h; /bin/bash ../scripts/headers_install.sh kuntul/include/mtd ./include/generated/uapi/mtd ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > kuntul/include/mtd/$$F; done; touch kuntul/include/mtd/.install

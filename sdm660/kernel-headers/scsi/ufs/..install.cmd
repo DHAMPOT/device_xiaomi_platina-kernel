@@ -1,0 +1,1 @@
+cmd_kuntul/include/scsi/ufs/.install := /bin/bash ../scripts/headers_install.sh kuntul/include/scsi/ufs ../include/uapi/scsi/ufs ioctl.h ufs.h; /bin/bash ../scripts/headers_install.sh kuntul/include/scsi/ufs ./include/generated/uapi/scsi/ufs ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > kuntul/include/scsi/ufs/$$F; done; touch kuntul/include/scsi/ufs/.install
