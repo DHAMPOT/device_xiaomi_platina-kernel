@@ -1,0 +1,1 @@
+cmd_abd/include/linux/isdn/.install := /bin/sh ../scripts/headers_install.sh abd/include/linux/isdn ../include/uapi/linux/isdn capicmd.h; /bin/sh ../scripts/headers_install.sh abd/include/linux/isdn ./include/generated/uapi/linux/isdn ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > abd/include/linux/isdn/$$F; done; touch abd/include/linux/isdn/.install

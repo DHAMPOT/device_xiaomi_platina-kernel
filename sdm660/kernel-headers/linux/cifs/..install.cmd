@@ -1,0 +1,1 @@
+cmd_abd/include/linux/cifs/.install := /bin/sh ../scripts/headers_install.sh abd/include/linux/cifs ../include/uapi/linux/cifs ; /bin/sh ../scripts/headers_install.sh abd/include/linux/cifs ./include/generated/uapi/linux/cifs ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > abd/include/linux/cifs/$$F; done; touch abd/include/linux/cifs/.install

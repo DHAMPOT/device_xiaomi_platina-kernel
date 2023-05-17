@@ -1,0 +1,1 @@
+cmd_abd/include/video/.install := /bin/sh ../scripts/headers_install.sh abd/include/video ../include/uapi/video edid.h msm_hdmi_hdcp_mgr.h msm_hdmi_modes.h sisfb.h uvesafb.h; /bin/sh ../scripts/headers_install.sh abd/include/video ./include/generated/uapi/video ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > abd/include/video/$$F; done; touch abd/include/video/.install

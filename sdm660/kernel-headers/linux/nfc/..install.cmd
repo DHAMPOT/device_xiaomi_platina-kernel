@@ -1,0 +1,1 @@
+cmd_abd/include/linux/nfc/.install := /bin/sh ../scripts/headers_install.sh abd/include/linux/nfc ../include/uapi/linux/nfc nfcinfo.h; /bin/sh ../scripts/headers_install.sh abd/include/linux/nfc ./include/generated/uapi/linux/nfc ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > abd/include/linux/nfc/$$F; done; touch abd/include/linux/nfc/.install

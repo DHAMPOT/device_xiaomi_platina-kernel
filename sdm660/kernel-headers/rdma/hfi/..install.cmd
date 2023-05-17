@@ -1,0 +1,1 @@
+cmd_abd/include/rdma/hfi/.install := /bin/sh ../scripts/headers_install.sh abd/include/rdma/hfi ../include/uapi/rdma/hfi hfi1_user.h; /bin/sh ../scripts/headers_install.sh abd/include/rdma/hfi ./include/generated/uapi/rdma/hfi ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > abd/include/rdma/hfi/$$F; done; touch abd/include/rdma/hfi/.install

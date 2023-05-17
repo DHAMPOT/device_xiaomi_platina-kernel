@@ -1,0 +1,1 @@
+cmd_abd/include/linux/sunrpc/.install := /bin/sh ../scripts/headers_install.sh abd/include/linux/sunrpc ../include/uapi/linux/sunrpc debug.h; /bin/sh ../scripts/headers_install.sh abd/include/linux/sunrpc ./include/generated/uapi/linux/sunrpc ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > abd/include/linux/sunrpc/$$F; done; touch abd/include/linux/sunrpc/.install
